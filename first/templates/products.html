@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block col1 %}
+    Name
+ {% endblock %}
+{% block col2 %} Username {% endblock %}
+{% block col3 %} Email {% endblock %}
+
+{% block row1 %}
+  {% for info in data %}
+    {{info.name}}
+   {% endfor %}
+{% endblock %}
+{% block row2 %}
+  {% for info in data %}
+  {{info.username}}
+   {% endfor %}
+{% endblock %}
+{% block row3 %}
+  {% for info in data %}
+  {{info.email}}
+   {% endfor %}
+{% endblock %}
+
